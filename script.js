@@ -4,9 +4,44 @@ function selectorRange () {
 };
 
 let numebersApp = []
+let arr = []
+
+function addSelected () {
+    const val = parseInt(document.getElementById('appSelector').value)
+    const sel = document.getElementById('selected')
+    
+    switch (val) {
+        case 1:
+            sel.innerText = 'Netflix'
+            arr.push('Netflix')
+            break;
+        case 2:
+            sel.innerText = 'Prime'
+            arr.push('Prime')
+            break;
+        case 3:
+            sel.innerText = 'Disney'
+            arr.push('Disney')
+            break;
+        case 4:
+            sel.innerText = 'HBO'
+            arr.push('HBO')
+            break;
+    
+        default:
+            break;
+    }
+
+    return sel.innerText = arr
+};
+
+
 function selectorApps () {
     const apps = document.getElementById('appSelector').value
+    
     numebersApp.push(apps)
+    addSelected()
+
     return console.log(numebersApp)
 };
 

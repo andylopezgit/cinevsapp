@@ -1,12 +1,35 @@
 body {
     background-color: aquamarine;
-};
+}
+
+#mainSection {
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+    height: 150px;
+    justify-content: space-between;
+    padding: 20px
+}
+
+#movies {
+    display: flex;
+    flex-direction: column;
+}
+
+#apps {
+    display: flex;
+    flex-direction: column;
+}
+
+#calc {
+    display: flex;
+    flex-direction: column;
+}
 
 #results {
-    color: red;
-};
-
-
-#results h2 {
-    color: red;
-};
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 169, 104);
+}

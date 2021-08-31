@@ -8,8 +8,8 @@
     <title>Cine vs Plataformas</title>
 </head>
 <body>
-    <main>
-        <header class="header">
+    <main class="main">
+        <header>
             <h1 id="title1">Que es mas Economico?</h2>
         </header>
         <section id="mainSection">
@@ -24,20 +24,25 @@
                 <button id="movieButton">Aceptar</button>
             </article>
             <article id="apps">
+                <h3>Cuantas peliculas ves al mes?</h3>
                 <select name="appSelector" id="appSelector">
-                    <option value="1">Netflix</option>
+                    <option value="1" name="Netflix">Netflix</option>
                     <option value="2">Prime</option>
                     <option value="3">Disney</option>
                     <option value="4">HBO</option>
                 </select>
                 <button id="addAppsButton">Agregar</button>
+                <span id="selected"></span>
 
             </article>
-            <article id="results">
+            <article id="calc">
+                <h3>Cuantas peliculas ves al mes?</h3>
                 <button id="comparation">Calcular</button>
-                <h2>Precio en total de Apps</h2>
-                <span id="total"></span>
             </article>
+        </section>
+        <section id="results">
+            <h3>Gasto mensual</h3>
+            <p id="total"></p>
         </section>
     </main>
     <script src="script.js"></script>
