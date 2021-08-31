@@ -22,10 +22,23 @@
                     <option value="3">10 a 15</option>
                     <option value="4">mas de 20</option>
                 </select>
-                <button id="button">Aceptar</button>
+                <button id="movieButton">Aceptar</button>
             </article>
-            <article id="apps"></article>
-            <article id="results"></article>
+            <article id="apps">
+                <select name="appSelector" id="appSelector">
+                    <option value="1">Netflix</option>
+                    <option value="2">Prime</option>
+                    <option value="3">Disney</option>
+                    <option value="4">HBO</option>
+                </select>
+                <button id="addAppsButton">Agregar</button>
+
+            </article>
+            <article id="results">
+                <button id="comparation">Calcular</button>
+                <h2>Precio en total de Apps</h2>
+                <span id="total"></span>
+            </article>
         </section>
     </main>
     <script src="script.js"></script>
