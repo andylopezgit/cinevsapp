@@ -38,10 +38,8 @@ function addSelected () {
 
 function selectorApps () {
     const apps = document.getElementById('appSelector').value
-    
     numebersApp.push(apps)
     addSelected()
-
     return console.log(numebersApp)
 };
 
@@ -52,8 +50,8 @@ let rangeMovieValue = document.getElementById('movieButton').addEventListener('c
 let apps = document.getElementById('addAppsButton').addEventListener('click',  selectorApps)
 
 function addTotal () {
-        const tot = document.querySelector('span')
-        tot.innerText = price
+        const tot = document.querySelector('p')
+        tot.innerText = price + ' Pesos'
 }
 
 

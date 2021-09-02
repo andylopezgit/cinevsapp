@@ -33,3 +33,7 @@ body {
     align-items: center;
     background-color: rgb(219, 169, 104);
 }
+
+#selected {
+    color: red;
+}
